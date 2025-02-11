@@ -1,0 +1,167 @@
+/* AdmitCard.css */
+
+.admit-card {
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #469bef;;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .admit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #469bef;;
+  }
+  
+  .admit-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .admit-card-logo {
+    width: 80px;
+  }
+  
+  .photo-id-placeholder {
+    width: 80px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    background-color: #f5f5f5;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .photo-id-placeholder:hover {
+    border-color: #469bef;
+    background-color: #9be7f6;; /* Light pink background */
+  }
+  
+  .admit-card-header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .admit-card-header h1:hover {
+    color: #469bef;;
+  }
+  
+  .admit-card-details,
+  .exam-details {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .admit-card-details:hover,
+  .exam-details:hover {
+    border-color: #469bef;;
+    background-color: #9be7f6; /* Light pink background */
+  }
+  
+  .admit-card-details h2,
+  .exam-details h2 {
+    font-size: 20px;
+    color: #469bef;;
+    margin-bottom: 10px;
+  }
+  
+  .admit-card-details p,
+  .exam-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .admit-card-details p strong,
+  .exam-details p strong {
+    color: #333;
+  }
+  
+  .admit-card-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .admit-card-footer p {
+    margin: 5px 0;
+  }
+  
+  .admit-card-footer p:hover {
+    color: #469bef;
+  }
+  
+  .admit-card-footer p strong {
+    color: #333;
+  }
+  
+  .general-instructions {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .general-instructions:hover {
+    border-color: #469bef;;
+    background-color:#9be7f6;; /* Light pink background */
+  }
+  
+  .general-instructions h2 {
+    font-size: 20px;
+    color: #469bef;;
+    margin-bottom: 10px;
+  }
+  
+  .general-instructions ol {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .general-instructions ol li {
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .general-instructions ol li:hover {
+    color: #469bef;;
+  }
+  
+  .general-instructions ul {
+    padding-left: 20px;
+  }
+  
+  .general-instructions ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .general-instructions ul li:hover {
+    color: #469bef;;
+  }
+  

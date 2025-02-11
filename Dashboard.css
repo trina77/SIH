@@ -1,0 +1,319 @@
+.dashboard-container {
+    display: flex;
+    height: 100%;
+}
+
+.dashboard-sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dashboard-sidebar li:hover {
+    background-color: #ddd;
+}
+
+.dashboard-sidebar .active {
+    background-color: #007bff;
+    color: white;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.dashboard-content h2 {
+    margin-bottom: 10px;
+}
+
+.go-back-button {
+    margin: 10px 0 10px 20px;
+    /* Adjusted margin for better positioning */
+    padding: 8px 16px;
+    /* Balanced padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    width: auto;
+    /* Ensures the button doesn't stretch */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.go-back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.dashboard-header {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.dashboard-header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.invite-examinee-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.invite-examinee-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.student-section {
+    margin-bottom: 30px;
+  }
+  
+  .student-card {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-card p {
+    margin: 5px 0;
+  }
+  
+  .view-report-button,
+  .approve-button,
+  .decline-button {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-report-button {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .view-report-button:hover {
+    background-color: #138496;
+  }
+  
+  .approve-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .approve-button:hover {
+    background-color: #218838;
+  }
+  
+  .decline-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .decline-button:hover {
+    background-color: #c82333;
+  }
+  
+  .mcq-section {
+    margin-top: 20px;
+  }
+  
+  .mcq-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-button, .delete-button, .add-question-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .update-button {
+    background-color: #007bff;
+    color: white;
+    margin: 5px;
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    margin: 5px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .add-question-button {
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .add-question-button:hover {
+    background-color: #218838;
+  }
+  
+  .add-question-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-question-form h3 {
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  
+  .add-question-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-question-button,
+  .cancel-question-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .save-question-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .save-question-button:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-question-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cancel-question-button:hover {
+    background-color: #c82333;
+  }
+  
+  .edit-question-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .edit-question-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .update-question-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .update-question-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .timing-inputs {
+    margin-top: 20px;
+  }
+  .timing-inputs input {
+    margin: 10px 5px;
+    padding: 5px;
+  }
+  .update-timing-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .update-timing-button:hover {
+    background-color: #45a049;
+  }
+  

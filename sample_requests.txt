@@ -1,0 +1,226 @@
+curl -X POST http://127.0.0.1:8000/api/signup \
+-H "Content-Type: application/json" \
+-d '{
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "phone_number": "1234567890",
+    "gender": "M",
+    "dob": "1990-01-01",
+    "role": "user",
+    "pwd_status": true,
+    "pwd_type": "blind"
+}'
+
+------
+
+curl -X POST http://127.0.0.1:8000/api/verify-otp \
+-H "Content-Type: application/json" \
+-d '{
+    "email": "john.doe@example.com",
+    "otp": 123456
+}'
+
+-------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/login-request \
+-H "Content-Type: application/json" \
+-d '{
+    "email": "john.doe@example.com"
+}'
+
+-----
+
+curl -X POST http://127.0.0.1:8000/api/verify-login-otp \
+-H "Content-Type: application/json" \
+-d '{
+    "email": "john.doe@example.com",
+    "otp": 123456
+}'
+
+------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/create-exam \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_name": "Sample Exam"
+}'
+
+------------------------------------------------------------
+
+curl -X DELETE http://127.0.0.1:8000/api/delete-exam \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_id": 10
+}'
+
+-------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/fetch-exam-admin \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000"
+}'
+
+------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/add-student \
+-H "Content-Type: application/json" \
+-d '{
+  "admin_id": 1,
+  "admin_auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "student_id": 2,
+  "exam_id": 10
+}'
+
+--------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/remove-student \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "mapping_id": 5
+}'
+
+----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/fetch-student-data \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_id": 10
+}'
+
+----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/enroll-exam \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 2,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_code": "ABC123"
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/fetch-exam-student \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 2,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000"
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/unenroll-exam \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 2,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "mapping_id": 5
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/verify-exam \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 2,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "mapping_id": 4
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/verify-student \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "mapping_id": 3
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/add-mcq \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_id": 10,
+  "question": "What is the capital of France?",
+  "correct_ans": "Paris",
+  "alt_a": "Berlin",
+  "alt_b": "Madrid",
+  "alt_c": "Rome"
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/fetch-mcq-admin \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_id": 10
+}'
+
+-----------------------------------------------------------------
+
+curl -X PUT http://127.0.0.1:8000/api/update-mcq \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "mcq_id": 5,
+  "question": "Updated Question",
+  "correct_ans": "Updated Answer",
+  "alt_a": "Updated Option A",
+  "alt_b": "Updated Option B",
+  "alt_c": "Updated Option C"
+}'
+
+
+-----------------------------------------------------------------
+
+curl -X DELETE http://127.0.0.1:8000/api/delete-mcq \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "mcq_id": 5
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/set-exam-timing \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_id": 10,
+  "start_date": "2024-12-15",
+  "start_time": "09:00:00",
+  "end_date": "2024-12-15",
+  "end_time": "12:00:00"
+}'
+
+-----------------------------------------------------------------
+
+curl -X POST http://127.0.0.1:8000/api/fetch-exam-timing \
+-H "Content-Type: application/json" \
+-d '{
+  "user_id": 1,
+  "auth_token": "123e4567-e89b-12d3-a456-426614174000",
+  "exam_id": 101
+}'
+
+
+-----------------------------------------------------------------

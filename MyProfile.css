@@ -1,0 +1,56 @@
+.profile-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 5px 0 20px;
+}
+
+
+
+.profile-picture-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+.profile-picture-placeholder,
+.upload-label {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+}
+
+.upload-input {
+  display: none;
+}
+
+.profile-section-title {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
