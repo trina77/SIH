@@ -1,3 +1,19 @@
+SIH Finalist: Vidya Sathi Tool - AI-Powered Quality Assessment Platform
+
+We're proud to announce that our project, Vidya Sathi Tool, has been selected as a finalist in the Smart India Hackathon (SIH). Our innovative solution aims to revolutionize the assessment landscape with an AI-powered quality assessment platform.
+
+Project Overview:
+Vidya Sathi Tool is a comprehensive assessment platform designed to evaluate candidates across various skill ecosystems, including pen-paper exams, online MCQs, descriptive exams, practical exams, and viva voce. Our web-based solution ensures inclusivity, adaptability, and fairness, providing a seamless assessment experience for candidates and educators alike.
+
+Key Features:
+
+- Inclusive platform with voice-to-text, text-to-speech, and alternative input methods for Persons with Disabilities (PWD)
+- Adaptive AI-powered personalization for tailored feedback and continuous improvement
+- Real-time analytics and detailed feedback through intuitive dashboards
+- Standardized assessments for uniform evaluation of skills and competencies
+- Multi-mode assessment system for flexible testing solutions
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
